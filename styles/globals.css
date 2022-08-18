@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   background-color: black;
 }
 
@@ -13,44 +15,43 @@ header {
   font-size: 20px;
   margin: auto;
 }
-header .left-logo {
+header .header__left {
   display: flex;
-}
-header .logo {
-  width: 100px;
-  height: 100px;
   align-items: center;
-  margin: 5px;
+}
+header .header__img {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  margin: 30px 10px;
   background-color: black;
 }
-header .nav-name {
+header .header__name {
   display: flex;
+  justify-items: auto;
   align-items: center;
 }
-header .nav-item {
+header .header__item {
   display: inline-block;
   justify-content: space-between;
-  margin: 18px;
-  font-size: 20px;
   font-weight: 900;
   cursor: pointer;
-  padding: 30px;
+  padding: 20px;
+  background-color: #000000;
+  text-decoration: line-through;
 }
-header .nav-item:hover {
-  transform: rotateZ(-50deg);
+header .header__item:hover {
+  transform: rotateY(360deg);
+  background: linear-gradient(to right, #cb197b, #3a4688);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 5s;
 }
-header .header-input {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  position: relative;
-  border: 4px solid transparent;
-  border-radius: 30px;
-  background: black;
-  background-clip: padding-box;
-  -o-border-image: 2px linear-gradient(to right, red, blue);
-     border-image: 2px linear-gradient(to right, red, blue);
-  padding: 10px;
+header #headers__search-bar {
+  border: solid rgb(84, 7, 85) 2px;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
 }
 
 main {
@@ -110,10 +111,10 @@ main {
   border-radius: 1000px;
 }
 .main-right .personnage {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   position: fixed;
-  margin-top: 80px;
-  margin-left: 85px;
+  margin-top: 50px;
+  margin-left: 45px;
   background: transparent;
 }/*# sourceMappingURL=globals.css.map */

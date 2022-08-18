@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   background-color: black;
 }
 
@@ -6,9 +8,7 @@ $gradian: linear-gradient(to right, #cb197b, #3a4688);
 
 /* navigation */
 
-
-header{
-
+header {
   width: 100%;
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -18,182 +18,135 @@ header{
   font-size: 20px;
   margin: auto;
 
-
-  .left-logo{
-      display: flex;
-  }
-
-  .logo{
-      width: 100px;
-      height: 100px;
-      align-items: center;
-      margin: 5px;
-      background-color: black;
+  .header__left {
+    display: flex;
+    align-items: center;
 
   }
 
-  .nav-name{
-      display: flex;
-      align-items: center;
+  .header__img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin: 30px 10px;
+    background-color: black;
   }
 
+  .header__name {
+    display: flex;
+    justify-items: auto;
+    align-items: center;
 
-  .nav-item{
-      display: inline-block;
-      justify-content: space-between;
-      margin: 18px;
-      font-size: 20px;
-      font-weight: 900;
-      cursor: pointer;
-      padding: 30px;
- 
   }
 
-  .nav-item:hover{
-    transform: rotateZ(-50deg);
+  .header__item {
+    display: inline-block;
+    justify-content: space-between;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #000000;
+    text-decoration:line-through;
+  }
+
+  .header__item:hover {
+    transform: rotateY(360deg);
+    background: $gradian;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 5s;
+  }
+
+  #headers__search-bar {
+    border: solid rgb(84, 7, 85) 2px;
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+
     
   }
-
-  .header-input{
-      display: flex;
-      align-items: center;
-      height: 40px;
-      position: relative;
-      border: 4px solid transparent;
-      border-radius: 30px;
-      background: black;
-      background-clip: padding-box;
-      border-image: 2px linear-gradient(to right, red , blue);
-      padding: 10px;
-  
-  }
-
-
-
 }
 
 // main
-main{
+main {
   display: flex;
-  width:75%;
+  width: 75%;
   margin-top: 50px;
   margin: auto;
-
 }
 
-.main-left{
-
-
-  .main-left-items{
-      // border: solid 10px red;
-      width: 120%;
-      // margin-left: 295px;
-
+.main-left {
+  .main-left-items {
+    // border: solid 10px red;
+    width: 120%;
+    // margin-left: 295px;
   }
 
-  span{
-      background: $gradian;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      // -moz-background-clip: text;
-      // -moz-text-fill-color: transparent;
-      
-      
-      }
+  span {
+    background: $gradian;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // -moz-background-clip: text;
+    // -moz-text-fill-color: transparent;
+  }
 
-      .main-left-item{
-          color: aliceblue;
-          list-style: none;
-          font-size: 80px;
-          padding-top: 15px;
-          
-      }
+  .main-left-item {
+    color: aliceblue;
+    list-style: none;
+    font-size: 80px;
+    padding-top: 15px;
+  }
 
-      button{
-          color: aliceblue;
-          align-items: center;
-          margin: 10px;
-          margin-left: 40px;
+  button {
+    color: aliceblue;
+    align-items: center;
+    margin: 10px;
+    margin-left: 40px;
+  }
 
-     
-      }
+  .btn-explore {
+    background: $gradian;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+  }
 
-      .btn-explore{
-          background:$gradian ;
-          padding: 10px;
-          border-radius: 50px;
-          font-size: 17px;
-          cursor: pointer;
+  .btn-explore:hover {
+  }
 
-       
-      }
-
-      .btn-explore:hover{
-        
-            
-    }
-
-  
-      .btn-create{
-          border-color: 2px solid $gradian ;
-          padding: 10px;
-          border-radius: 50px;
-          font-size: 17px;
-          border: 1px solid#744961;
-          cursor: pointer;
-
-      }
-      .btn-create:hover{
-        transition-duration: background-color 0.5s linear;
-        background-color: $gradian;
-            
-    }
-  
-
+  .btn-create {
+    border-color: 2px solid $gradian;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 17px;
+    border: 1px solid#744961;
+    cursor: pointer;
+  }
+  .btn-create:hover {
+    transition-duration: background-color 0.5s linear;
+    background-color: $gradian;
+  }
 }
-
-
-
 
 // main right
-.main-right{
+.main-right {
   // border: solid 10px rgb(0, 30, 255);
   margin-left: 300px;
-  
-  
-  
-  .main-rond-right{
-      width: 600px;
-      height: 600px;
-      background: $gradian;
-      border-radius: 1000px;
+
+  .main-rond-right {
+    width: 600px;
+    height: 600px;
+    background: $gradian;
+    border-radius: 1000px;
   }
 
-  .personnage{
-    width: 400px;
-    height: 400px;
+  .personnage {
+    width: 500px;
+    height: 500px;
     position: fixed;
-    margin-top: 80px;
-    margin-left: 85px;
+    margin-top: 50px;
+    margin-left: 45px;
     background: transparent;
-    
-     
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

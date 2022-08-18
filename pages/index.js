@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -12,55 +12,49 @@ export default function Home() {
       </Head>
 
       <header>
-
-        <div className="left-logo">
-            {/* <img className="logo" src="./apple.jpg" alt=""> */}
-            <h3 className="nav-name">CryptoHype</h3>
+        <div className="header__left">
+          <img className="header__img" src="logo.png" alt="" />
+          <h3 className="headar__name">CryptoHype</h3>
         </div>
         <nav>
-            <ul className="nav-items">
-                <li className="nav-item">Market</li>
-                <li className="nav-item">Disover</li>
-                <li className="nav-item">About</li>
-                <li className="nav-item">Artist</li>
-            </ul>
-        
-
+          <ul className="header__items">
+            <li className="header__item">Market</li>
+            <li className="header__item">Disover</li>
+            <li className="header__item">About</li>
+            <li className="header__item">Artist</li>
+          </ul>
         </nav>
-        
-        
-        <input className="header-input" placeholder="Search related to NFT" type="search" id="site-search" name="q" />
-              
 
-</header>
+        <div className="header__search-bar">
+          <input
+            placeholder="Search related to NFT"
+            type="search"
+            name="q"
+          />
+        </div>
+      </header>
 
-<main>
-    <content className="main-left">
-        <ul className="main-left-items">
-            <li className="main-left-item">Best <span className="left-gradian">NFT</span></li>
+      <main>
+        <content className="main-left">
+          <ul className="main-left-items">
+            <li className="main-left-item">
+              Best <span className="left-gradian">NFT</span>
+            </li>
             <li className="main-left-item">Collection for</li>
             <li className="main-left-item">Your Future</li>
-        </ul>
-        <div className="left-btn">
+          </ul>
+          <div className="left-btn">
             <button className="btn-explore">Explore Now</button>
             <button className="btn-create">Create NFT</button>
-        </div>
-    </content>
+          </div>
+        </content>
 
-
-    <content className="main-right">
-
-        <div className="main-rond-right">
-!        </div>
-        
-    </content>
-</main>
-
-
-
-      
-
-   
+        <content className="main-right">
+          <div className="main-rond-right">
+            <img className="personnage" src="elephant.png" alt="" />!{' '}
+          </div>
+        </content>
+      </main>
     </div>
-  )
+  );
 }
