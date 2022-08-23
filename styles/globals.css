@@ -112,7 +112,6 @@ main {
   font-family: "Silkscreen", cursive;
 }
 .main-left .main__item-stats {
-  position: relative;
   color: white;
   display: inline-block;
   border: 1px solid rgb(255, 255, 255);
@@ -151,7 +150,7 @@ main {
   color: white;
   width: 250px;
   height: auto;
-  position: fixed;
+  position: absolute;
   margin-top: 300px;
   margin-left: 350px;
   text-align: center;
@@ -192,7 +191,6 @@ main {
 
 footer {
   color: rgb(255, 255, 255);
-  display: flex;
   width: 100%;
   margin-top: 50px;
   font-family: "DynaPuff", cursive;
@@ -204,12 +202,6 @@ footer {
   text-align: center;
   justify-content: space-between;
   margin-left: 190px;
-}
-
-.footer__bloc {
-  display: inline-block;
-  display: flex;
-  align-items: center;
 }
 
 .footer__bloc-title {
