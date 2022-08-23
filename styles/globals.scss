@@ -4,6 +4,13 @@
   background-color: black;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
+
+$game-font: 'Silkscreen', cursive;
+$classique-font: 'DynaPuff', cursive;
+
+
 $gradian: linear-gradient(to right, #cb197b, #3a4688);
 
 /* navigation */
@@ -16,11 +23,15 @@ header {
   align-items: center;
   color: aliceblue;
   font-size: 20px;
-  margin: auto;
+   margin-bottom: 40px;
+  font-family: $classique-font;
+  
+
 
   .header__left {
     display: flex;
     align-items: center;
+    cursor: pointer;
 
   }
 
@@ -30,14 +41,10 @@ header {
     align-items: center;
     margin: 30px 10px;
     background-color: black;
+    cursor: pointer;
   }
 
-  .header__name {
-    display: flex;
-    justify-items: auto;
-    align-items: center;
-
-  }
+  
 
   .header__item {
     display: inline-block;
@@ -47,40 +54,39 @@ header {
     padding: 20px;
     background-color: #000000;
     text-decoration:line-through;
+    margin-right: 30px;
+
   }
 
   .header__item:hover {
     transform: rotateY(360deg);
+    transition: 5s;
     background: $gradian;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 5s;
+    
   }
 
-  #headers__search-bar {
-    border: solid rgb(84, 7, 85) 2px;
-    border-radius: 50px;
-    padding: 5px;
+  input {
+    box-shadow: 0 0 20px rgb(219, 8, 167);
     color: white;
+    padding: 7px;
+    border-radius: 50px;
 
     
   }
 }
 
+
 // main
 main {
   display: flex;
-  width: 75%;
-  margin-top: 50px;
+  width: 80%;
   margin: auto;
 }
 
 .main-left {
-  .main-left-items {
-    // border: solid 10px red;
-    width: 120%;
-    // margin-left: 295px;
-  }
+  width: 100%;
 
   span {
     background: $gradian;
@@ -93,60 +99,253 @@ main {
   .main-left-item {
     color: aliceblue;
     list-style: none;
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 15px;
+    font-family: $game-font;
   }
+
+
+  // button
 
   button {
     color: aliceblue;
     align-items: center;
-    margin: 10px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 44px;
+    font-family: $game-font;
+
   }
 
   .btn-explore {
     background: $gradian;
     padding: 10px;
     border-radius: 50px;
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer;
+   
   }
 
   .btn-explore:hover {
+    background: #610d83;
+    transition: 2s;
   }
 
   .btn-create {
-    border-color: 2px solid $gradian;
+   background: $gradian;
     padding: 10px;
     border-radius: 50px;
-    font-size: 17px;
-    border: 1px solid#744961;
+    font-size: 15px;
     cursor: pointer;
+    
   }
   .btn-create:hover {
-    transition-duration: background-color 0.5s linear;
-    background-color: $gradian;
+    background: $gradian;
+    transition: 1s;
   }
+
+
+
+
+  // stats
+
+
+  .main__items-stats{
+    margin-left:21px;
+    margin-top: 10px;
+    height: auto;
+    font-family: $game-font;
+  }
+
+  .main__item-stats{
+    position: relative;
+    color: white;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+    
+
+  }
+ 
+
+  .main__item-stat{
+    color: white;
+
+    display: inline-block;
+    margin: 30px 30px 30px ;
+    text-align: center;
+    
+
+  }
+  
+
+
 }
 
 // main right
 .main-right {
+  display: flex;
   // border: solid 10px rgb(0, 30, 255);
-  margin-left: 300px;
 
   .main-rond-right {
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     background: $gradian;
     border-radius: 1000px;
+    margin-right: 80px;
   }
 
   .personnage {
     width: 500px;
     height: 500px;
-    position: fixed;
     margin-top: 50px;
-    margin-left: 45px;
+    margin-left: -105px;
     background: transparent;
   }
+
+  //bloc information right
+  .bloc__information{
+    color: white;
+    width: 250px;
+    height: auto;
+    position: fixed;
+    margin-top: 300px;
+    margin-left: 350px;
+    text-align: center;
+    border-radius: 20px;    
+    padding-bottom: 10px;
+    opacity: 0.6;
+
+  }
+    .title__information{
+    color: #ffffff;
+    
+
+  }
+  .left__information{
+    display: inline-block;
+    margin-right: 50px;
+    width: auto;
+
+  }
+  .right__information{
+    display: inline-block;
+    background: transparent;
+
+  }
+
+
+  .button__bid{
+    background: $gradian;
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 800;
+
+  }
+  .button__view{
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid white;
+    font-weight: 800;
+
+    
+  }
+
+
+
+
 }
+
+
+
+
+// footer
+
+footer{
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  font-family: $classique-font;
+}
+.footer__main{
+  display: flex;
+  width: 79%;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 190px;
+
+
+}
+.footer__bloc{
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  
+  
+
+  
+
+}
+.footer__bloc-title{
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.footer__rond{
+  width: 65px;
+    height: 65px;
+    background: $gradian;
+    border-radius: 1000px;
+    display: inline-block;
+    margin: auto;
+    margin: 10px 20px 0px ;
+}
+.footer__logo1{
+  background: transparent;
+  width: 36px;
+  height: 36px;
+  margin-top: 15px;
+  cursor: pointer;
+
+
+
+}
+
+ 
+    .footer__logo2{
+    background: transparent;
+  width: 40px;
+  height: 40px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  }
+
+  .footer__logo3{
+    background: transparent;
+  width: 36px;
+  height: 36px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  }
+
+  .error{
+    color: #9c0e0e;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 150px;
+    font-weight: bold;
+  }

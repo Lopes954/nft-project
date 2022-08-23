@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -11,28 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <div className="header__left">
-          <img className="header__img" src="logo.png" alt="" />
-          <h3 className="headar__name">CryptoHype</h3>
-        </div>
-        <nav>
-          <ul className="header__items">
-            <li className="header__item">Market</li>
-            <li className="header__item">Disover</li>
-            <li className="header__item">About</li>
-            <li className="header__item">Artist</li>
-          </ul>
-        </nav>
+      
+      <>
+        <Navbar />
+       
+      </>
+     
 
-        <div className="header__search-bar">
-          <input
-            placeholder="Search related to NFT"
-            type="search"
-            name="q"
-          />
-        </div>
-      </header>
 
       <main>
         <content className="main-left">
@@ -47,14 +33,80 @@ export default function Home() {
             <button className="btn-explore">Explore Now</button>
             <button className="btn-create">Create NFT</button>
           </div>
+
+          <div className="main__items-stats">
+            <div className="main__item-stats">
+              <h2>625000</h2>
+              <p>Collection</p>
+            </div>
+
+            <div className="main__item-stats">
+              <h2>14000</h2>
+              <p>Action</p>
+            </div>
+
+            <div className="main__item-stat">
+              <h2>5200</h2>
+              <p>Artist</p>
+            </div>
+          </div>
         </content>
 
         <content className="main-right">
           <div className="main-rond-right">
             <img className="personnage" src="elephant.png" alt="" />!{' '}
           </div>
+
+          <div className="bloc__information">
+            <div className="left__information">
+              <p className='title__information'>Current Bid</p>
+              <h4 className='number__information'>12.43ETH</h4>
+              <button className='button__bid'>PLace Bid</button>
+
+            </div>
+
+            <div className="right__information">
+                <p className='title__information'>Ends Inc</p>
+                <h4 className='number__information'>12:24:00</h4>
+                <button className='button__view'>View NFT</button>
+            </div>
+          </div>
         </content>
       </main>
+
+      <footer>
+        <div className="footer__main">
+          <div className="footer__bloc">
+            <div className="footer__rond"><img className='footer__logo1' src="archive.png" alt="" /></div>
+            <div className="footer__bloc-title">
+              <p className="footer__title">
+                Trusted with <br /> 10 Achievement
+              </p>
+            </div>
+          </div>
+
+          <div className="footer__bloc">
+            <div className="footer__rond"><img className='footer__logo2' src="sacjaune.png" alt="" /></div>
+            <div className="footer__bloc-title">
+              <p className="footer__title">
+                Easy Buy & Submit <br />
+                Best NFT Art
+              </p>
+            </div>
+          </div>
+
+          <div className="footer__bloc">
+            <div className="footer__rond"><img className='footer__logo3' src="cadeaujaune.png" alt="" /></div>
+            <div className="footer__bloc-title">
+              <p className="footer__title">
+                Get Dicount <br />
+                Pro Menbership
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </footer>
     </div>
   );
 }

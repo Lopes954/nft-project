@@ -1,0 +1,15 @@
+*,
+::before,
+::after {
+  background-color: black;
+}
+//font-familly
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
+$game-font: 'Silkscreen', cursive;
+$classique-font: 'DynaPuff', cursive;
+
+//color
+$gradian: linear-gradient(to right, #cb197b, #3a4688);
+
+
