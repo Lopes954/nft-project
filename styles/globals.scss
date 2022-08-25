@@ -1,14 +1,15 @@
 *,
 ::before,
 ::after {
-  background-color: black;
+  background-color: rgb(221, 168, 168);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Dirt&family=Silkscreen&display=swap');
 $game-font: 'Silkscreen', cursive;
 $classique-font: 'DynaPuff', cursive;
+$title-font: 'Rubik Dirt', cursive;
 
 
 $gradian: linear-gradient(to right, #cb197b, #3a4688);
@@ -79,7 +80,7 @@ header {
 
 
 // main
-main {
+.main__home {
   display: flex;
   width: 80%;
   margin: auto;
@@ -87,6 +88,8 @@ main {
 
 .main-left {
   width: 100%;
+
+
 
   span {
     background: $gradian;
@@ -190,30 +193,33 @@ main {
   display: flex;
   // border: solid 10px rgb(0, 30, 255);
 
-  .main-rond-right {
+  .main-rond-right  {
     width: 550px;
     height: 550px;
     background: $gradian;
     border-radius: 1000px;
-    margin-right: 80px;
+  }
+  .main-rond-right span{
+    
+    overflow:visible !important ;
   }
 
-  .personnage {
-    width: 500px;
-    height: 500px;
-    margin-top: 50px;
-    margin-left: -105px;
+  .personnage{
+    
     background: transparent;
+    margin-left: -100px;
+    
   }
+
 
   //bloc information right
   .bloc__information{
-    color: white;
+    color: rgb(255, 255, 255);
     width: 250px;
     height: auto;
     position: absolute;
     margin-top: 300px;
-    margin-left: 350px;
+    margin-left: 300px;
     text-align: center;
     border-radius: 20px;    
     padding-bottom: 10px;

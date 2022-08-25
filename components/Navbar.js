@@ -16,8 +16,8 @@ export default function Navbar() {
           <ul className="header__items">
             <Link href="/"><li className="header__item">Home</li></Link>
             <Link href="/market"><li className="header__item">Market</li></Link>
-            <Link href="/"><li className="header__item">Contact</li></Link>
-            <Link href="/"><li className="header__item">Artist</li></Link>
+            <Link href="/contact"><li className="header__item">Contact</li></Link>
+            <Link href="/artist"><li className="header__item">Artist</li></Link>
           </ul>
         </nav>
 

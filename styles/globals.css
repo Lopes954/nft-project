@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Dirt&family=Silkscreen&display=swap");
 *,
 ::before,
 ::after {
-  background-color: black;
+  background-color: rgb(221, 168, 168);
 }
 
 /* navigation */
@@ -55,7 +56,7 @@ header input {
   border-radius: 50px;
 }
 
-main {
+.main__home {
   display: flex;
   width: 80%;
   margin: auto;
@@ -137,22 +138,21 @@ main {
   height: 550px;
   background: linear-gradient(to right, #cb197b, #3a4688);
   border-radius: 1000px;
-  margin-right: 80px;
+}
+.main-right .main-rond-right span {
+  overflow: visible !important;
 }
 .main-right .personnage {
-  width: 500px;
-  height: 500px;
-  margin-top: 50px;
-  margin-left: -105px;
   background: transparent;
+  margin-left: -100px;
 }
 .main-right .bloc__information {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 250px;
   height: auto;
   position: absolute;
   margin-top: 300px;
-  margin-left: 350px;
+  margin-left: 300px;
   text-align: center;
   border-radius: 20px;
   padding-bottom: 10px;

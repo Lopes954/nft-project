@@ -1,15 +1,90 @@
 *,
 ::before,
 ::after {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 //font-familly
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Dirt&family=Silkscreen&display=swap');
+
 $game-font: 'Silkscreen', cursive;
 $classique-font: 'DynaPuff', cursive;
+$title-font: 'Rubik Dirt', cursive;
+
 
 //color
 $gradian: linear-gradient(to right, #cb197b, #3a4688);
+
+
+.main__market{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+.title__nft{
+  color: aliceblue;
+  font-family: $title-font;
+  margin-left: 80px;
+
+}
+
+span {
+  background: $gradian;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // -moz-background-clip: text;
+  // -moz-text-fill-color: transparent;
+}
+.main__nft{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  
+}
+
+
+.main__rond{
+  width: 320px;
+  height: 320px;
+  background: $gradian;
+  border-radius: 1000px;
+  margin: 90px;
+  
+}
+
+// bloc nformation
+
+.bloc__information{
+  color: white;
+  width: 250px;
+  position: absolute;
+  margin-left: 36px;
+  text-align: center;
+  border-radius: 10px;    
+  opacity: 0.7;
+
+  
+}
+  .title__information{
+  color: #ffffff;
+  
+
+}
+.left__information{
+  display: inline-block;
+  margin-right: 100px;
+  width: auto;
+
+}
+.right__information{
+  display: inline-block;
+  background: transparent;
+
+}
+.classList{
+  color: #ffffff;
+}
 
 
